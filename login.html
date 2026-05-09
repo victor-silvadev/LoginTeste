@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d774ec8a06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+    <title>Login/cadastro</title>
+</head>
+<body>
+    <div id="Login">
+        <div id="InfoLogin">
+            <div class="Texto">
+                <h1>Bem Vindo</h1>
+                <p>Entre na sua conta.</p>
+            </div>
+            <form action="">
+                <div class="NomeEmail">
+                    <input type="text" placeholder="Email ou Nome">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="Senha">
+                    <input type="password" placeholder="Senha" id="senha">
+                    <a href="#" onclick="OlharS('senha', 'olho')" id="olho">
+                    <i class="fa-regular fa-eye-slash"></i></a>
+                </div>
+                <a href="#" class="Esqeceu">Esqueceu a senha?</a> 
+                <br>
+                <button type="button" class="Entrar">Entrar</button>
+                <p>-ou-</p>
+                <div class="RedesSociais">
+                    <button><i class="fa-brands fa-apple"></i></button>
+                    <button><i class="fa-brands fa-chrome"></i></button>
+                    <button><i class="fa-brands fa-facebook"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <div id="Imagem">
+            <h2>Primeira vez aqui?</h2>
+            <button type="button" onclick="Resgistre()">Registre-se</button>
+        </div>
+    </div>
+
+    <div id="Cadastro">
+        <div class="infoCadastro">
+            <div class="TextoCadastro">
+                <h1>Cadastro</h1>
+                <p>Cadastre-se para ter acesso ao nosso site.</p>
+            </div>
+            <form action="">
+                <div class="Nome">
+                    <input type="text" placeholder="Nome">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="EmailCadastro">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="SenhaCadastro">
+                    <input type="password" placeholder="Senha" id="senhaC">
+
+                    <a href="#" onclick="OlharS('senhaC', 'olhoC')" id="olhoC">
+                        <i class="fa-regular fa-eye-slash"></i></a>
+                        <input type="password" placeholder="Confirma  Senha" id="senhaCC">
+
+                </div>
+
+                <button type="button" class="Cadastrar">Cadastrar</button>
+            </form>
+        </div>
+
+        <div id="ImagemCadastro">
+            <h2>Ja tem uma conta?</h2>
+            <button type="button" onclick="EntrarC()">Entrar</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

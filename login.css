@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+:root {
+    --cor001: #B4C8D9;
+    --cor002: #6C9BD9;
+    --cor003: #16498C;
+    --cor004: #16498C;
+    --cor005: #011126;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor003);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Login {
+    display: flex; 
+    transition: all 0.5s ease;
+}
+#Cadastro {
+    display: flex; 
+    flex-direction: row-reverse;
+    position: absolute; 
+    transform: translateX(100vw); 
+    transition: all 0.5s ease;
+
+}
+
+#Login, #Cadastro {
+    background-color: rgb(248, 244, 244);
+    text-align: center;
+    width: 65%;
+    height: 85%;
+    border-radius: 60px;
+    padding: 20px;
+
+
+    justify-content: space-between;
+}
+
+#InfoLogin, .infoCadastro {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#InfoLogin .Texto, .infoCadastro .TextoCadastro{
+    color: var(--cor002);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+#InfoLogin h1, .infoCadastro h1 {
+    font-size: 2.5em;
+    margin: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#InfoLogin .NomeEmail, .Senha, .infoCadastro .Nome, .EmailCadastro, .SenhaCadastro {
+    position: relative;
+}
+
+#InfoLogin .NomeEmail i, .Senha i, .infoCadastro .Nome i, .EmailCadastro i, .SenhaCadastro i{
+    color: rgb(87, 84, 84);
+    position: absolute;
+    bottom: 21px;
+    right: 77px;
+}
+
+
+#InfoLogin .NomeEmail input, .Senha input, .infoCadastro  .Nome input, .EmailCadastro input, .SenhaCadastro input{
+    padding: 12px;
+    border-radius: 40px;
+    border: 1px solid var(--cor002);
+    outline: none;
+    margin: 8px;
+    width: 70%;
+}
+
+#InfoLogin form a.Esqeceu {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--cor002);
+
+    display: flex;
+    justify-content: end;
+    margin-right: 75px;
+}
+
+#InfoLogin form a.Esqeceu:hover {
+    text-decoration: underline;
+    color: var(--cor004);
+}
+
+#InfoLogin .Entrar, .infoCadastro .Cadastrar {
+    background:var(--cor004);
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.76);
+    font-weight: 900;
+    padding: 12px;
+    width: 60%;
+    border-radius: 40px;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transition-duration: .3s;
+}
+
+#InfoLogin .Entrar:hover, .infoCadastro .Cadastrar:hover  {
+    cursor: pointer;
+    background: var(--cor002);
+    transform: scaleY(1.1);
+    transition-duration: .3s;
+}
+
+#InfoLogin > form > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 0px;
+}
+
+#InfoLogin .RedesSociais button {
+    margin: 10px 10px;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 50%;
+    color: var(--cor004);
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    transition-duration: .5s;
+}
+
+#InfoLogin .RedesSociais button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: .5s;
+    color: var(--cor002);
+}
+
+#Imagem, #ImagemCadastro {
+    background-size: cover;
+    background-image: url(Imagens/FundoForm.jpg);
+    width: 410px;
+    height: 503px;
+    border-radius: 40px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Imagem h2, #ImagemCadastro h2 {
+    margin-bottom: 20px;
+    font-size: 2.1em;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.733);
+}
+
+#Imagem  button, #ImagemCadastro button{
+    padding: 12px;
+    border-radius: 40px;
+    border: 1px solid rgba(240, 233, 233, 0.445);
+    color: white;
+    width: 40%;
+    font-weight: 900;
+    background: transparent;
+    transition-duration: .5s;
+}
+
+#Imagem  button:hover, #ImagemCadastro button:hover {
+    background:var(--cor004);
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.76);
+    border: none;
+    transition-duration: .3s;
+    cursor: pointer;
+}
