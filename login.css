@@ -41,8 +41,8 @@ body {
 #Login, #Cadastro {
     background-color: rgb(248, 244, 244);
     text-align: center;
-    width: 65%;
-    height: 85%;
+    width: 950px;
+    max-height: 85%;
     border-radius: 60px;
     padding: 20px;
 
@@ -73,6 +73,7 @@ body {
 
 #InfoLogin .NomeEmail, .Senha, .infoCadastro .Nome, .EmailCadastro, .SenhaCadastro {
     position: relative;
+    width: 100%;
 }
 
 #InfoLogin .NomeEmail i, .Senha i, .infoCadastro .Nome i, .EmailCadastro i, .SenhaCadastro i{
@@ -155,7 +156,7 @@ body {
     background-size: cover;
     background-image: url(Imagens/FundoForm.jpg);
     width: 410px;
-    height: 503px;
+    max-height: 503px;
     border-radius: 40px;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -169,7 +170,7 @@ body {
 #Imagem h2, #ImagemCadastro h2 {
     margin-bottom: 20px;
     font-size: 2.1em;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.733);
+    text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.918);
 }
 
 #Imagem  button, #ImagemCadastro button{
@@ -180,6 +181,7 @@ body {
     width: 40%;
     font-weight: 900;
     background: transparent;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.623);
     transition-duration: .5s;
 }
 
